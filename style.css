@@ -363,11 +363,12 @@ h2 {
         border: none;
         box-shadow: none;
     }
-    .header-top { flex-direction: column-reverse; align-items: flex-start; gap: 16px; }
+    .header-top { flex-direction: row; align-items: center; justify-content: space-between; gap: 16px; text-align: left; }
     .name-title { font-size: 2.05rem; }
     .role-info { white-space: normal; font-size: 1rem; }
-    .avatar { width: 100px; max-width: 100%; height: auto; margin-bottom: 10px; }
-    .social-links { gap: 12px; }
+    .header-photo { align-self: center; margin-left: 0; }
+    .avatar { width: 96px; max-width: 100%; height: auto; margin-bottom: 0; transform: none; }
+    .social-links { gap: 12px; justify-content: flex-start; }
     .social-btn { font-size: 0.9rem; }
     .paper-card { flex-direction: column-reverse; padding: 16px; margin-bottom: 16px; }
     .paper-img { width: 100%; height: auto; }
