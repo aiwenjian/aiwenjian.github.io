@@ -363,11 +363,20 @@ h2 {
         border: none;
         box-shadow: none;
     }
-    .header-top { flex-direction: row; align-items: center; justify-content: space-between; gap: 16px; text-align: left; }
-    .name-title { font-size: 2.05rem; }
+    .header-top {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 12px;
+        text-align: left;
+    }
+    .header-info { order: 1; min-width: 0; }
+    .header-photo { order: 2; }
+    .name-title { font-size: 1.9rem; }
     .role-info { white-space: normal; font-size: 1rem; }
     .header-photo { align-self: center; margin-left: 0; }
-    .avatar { width: 96px; max-width: 100%; height: auto; margin-bottom: 0; transform: none; }
+    .avatar { width: 84px; max-width: 100%; height: auto; margin-bottom: 0; transform: none; }
     .social-links { gap: 12px; justify-content: flex-start; }
     .social-btn { font-size: 0.9rem; }
     .paper-card { flex-direction: column-reverse; padding: 16px; margin-bottom: 16px; }
