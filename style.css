@@ -343,13 +343,34 @@ h2 {
     font-size: 0.92em;
 }
 
+@media (max-width: 980px) {
+    body { padding: 24px 0; }
+    .container { padding: 40px 36px; margin: 0 16px; }
+    .name-title { font-size: 2.3rem; }
+    .paper-img { width: 180px; height: 115px; }
+}
+
 @media (max-width: 768px) {
-    .container { padding: 30px 20px; margin: 10px; }
-    .header-top { flex-direction: column-reverse; align-items: flex-start; gap: 20px;}
-    .role-info { white-space: normal; }
-    .avatar { width: 110px; max-width: 100%; height: auto; margin-bottom: 20px; }
-    .paper-card { flex-direction: column-reverse; }
+    body { padding: 16px 0; }
+    .container { padding: 26px 18px; margin: 0 12px; }
+    .header-top { flex-direction: column-reverse; align-items: flex-start; gap: 16px; }
+    .name-title { font-size: 2.05rem; }
+    .role-info { white-space: normal; font-size: 1rem; }
+    .avatar { width: 100px; max-width: 100%; height: auto; margin-bottom: 10px; }
+    .social-links { gap: 12px; }
+    .social-btn { font-size: 0.9rem; }
+    .paper-card { flex-direction: column-reverse; padding: 18px; }
     .paper-img { width: 100%; height: auto; }
+    .paper-title { font-size: 1.05rem; }
+    .paper-authors { font-size: 0.9rem; }
+    .paper-desc { font-size: 0.88rem; }
+    .news-item { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .news-date { min-width: 0; text-align: left; font-size: 0.95rem; }
+    .date-right .news-item { justify-content: flex-start; }
+    .date-right .news-date { margin-left: 0; text-align: left; min-width: 0; }
+    .edu-list .news-date { flex: 0 0 auto; width: auto; text-align: left; }
+    .edu-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .edu-advisor { margin-left: 0; width: auto; text-align: left; white-space: normal; }
 }
 
 .activities {
