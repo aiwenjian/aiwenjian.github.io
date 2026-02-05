@@ -386,8 +386,14 @@ h2 {
     .paper-desc { font-size: 0.88rem; }
     .news-item { flex-direction: column; align-items: flex-start; gap: 4px; }
     .news-date { min-width: 0; text-align: left; font-size: 0.95rem; }
-    .date-right .news-item { justify-content: flex-start; }
-    .date-right .news-date { margin-left: 0; text-align: left; min-width: 0; }
+    .date-right .news-item {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .date-right .news-item > span:first-child { flex: 1; min-width: 0; }
+    .date-right .news-date { margin-left: 12px; text-align: right; min-width: 0; }
     .edu-list .news-date { flex: 0 0 auto; width: auto; text-align: left; }
     .edu-row { flex-direction: column; align-items: flex-start; gap: 4px; }
     .edu-advisor { margin-left: 0; width: auto; text-align: left; white-space: normal; }
